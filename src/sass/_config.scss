@@ -1,0 +1,24 @@
+$primary-color: #8ac926;
+$secondary-color: #000;
+$terciary-color: #fff;
+$btn-color: #ffe92e;
+$font-color: rgb(109, 109, 109);
+$box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
+$limit: 10;
+$unit: 8px;
+
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Itim&family=Kaushan+Script&display=swap");
+
+@function size($value) {
+  @return $value * $unit;
+}
+
+@mixin reset-pm {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  @include reset-pm();
+  box-sizing: border-box;
+}
